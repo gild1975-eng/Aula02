@@ -20,6 +20,8 @@ export class TagLista {
 
 minhaString: string = 'Minha lista não ordenada Dinamica';
 
+minhaString2: any = 'Minha lista não ordenada Dinamica';
+
 minhaLista: string[] = ['Item 1', 'Item 2', 'Item 3', 'Item 4', 'Item 5'];
 
 minhaListaOrdenada: string[] = ['Lista ordenada 1', 'Lista ordenada 2', 'Lista ordenada 3'];
@@ -46,8 +48,21 @@ minhaListaNever: never[] = [];
 
 minhaListaUnknown: unknown[] = ['Item 1', 2, true, { nome: 'João' }, [1, 2, 3]];
 
+constructor() {
+  this.minhaString2 = 10; // Atribuindo um número a uma variável do tipo any
+  this.minhaLista.push('Item 6'); // Adicionando um item à lista
+  this.minhaListaOrdenada.push('Lista ordenada 4'); // Adicionando um item à lista ordenada
+  this.minhaListaNumerica.push(6); // Adicionando um número à lista numérica
+  this.minhaListaBoolean.push(false); // Adicionando um valor booleano à lista booleana
+  this.minhaListaObject.push({ nome: 'Ana', idade: 20 }); // Adicionando um objeto à lista de objetos
+  this.minhaListaAny.push('Item 7'); // Adicionando um item à lista do tipo any
+  this.minhaListaVoid.push(undefined); // Adicionando um valor undefined à lista do tipo void
+  this.minhaListaNull.push(null); // Adicionando um valor null à lista do tipo null
+  this.minhaListaUndefined.push(undefined); // Adicionando um valor undefined à lista do tipo undefined
+  this.minhaListaUnknown.push('Item 8'); // Adicionando um item à lista do tipo unknown 
+}
 
-
+ 
 
 
 }// Fim de classe
