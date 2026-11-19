@@ -60,6 +60,15 @@ constructor() {
   this.minhaListaNull.push(null); // Adicionando um valor null à lista do tipo null
   this.minhaListaUndefined.push(undefined); // Adicionando um valor undefined à lista do tipo undefined
   this.minhaListaUnknown.push('Item 8'); // Adicionando um item à lista do tipo unknown 
+
+  let teste = false;
+  if (teste) {
+    console.log('Teste é verdadeiro');
+  } else {
+    console.log('Teste é falso');
+  }
+
+  
 }
 
  
