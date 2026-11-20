@@ -24,3 +24,19 @@
 
 <!-- Lista dinamica ou não estatica -->
  <p><strong><br>Minha lista não ordenada Dinamica</strong></p>
+ <ul>
+  <!-- *Aqui começa o FOR " -->
+
+   @for (item of this.minhaListaItem; track item) {
+     <li>{{item}}</li>
+
+   }
+      </ul>  
+
+      
+
+   <ol>
+    @for (data of this.minhaLista; track $index) {
+      <li>{{$index}}, " Andar " {{ data }}</li>
+    }
+   </ol>
